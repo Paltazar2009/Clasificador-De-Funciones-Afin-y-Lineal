@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Funciones Lineales y Afines</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="contenedor">
+
+        <header>
+            <h1>Funciones lineales y afines</h1>
+            <p>
+                En esta página podrás generar dos números al azar
+                y descubrir qué tipo de función se forma con ellos.
+            </p>
+        </header>
+
+        <section class="generador">
+
+            <h2>Generador de funciones</h2>
+
+            <p>Presiona el botón para generar nuevos valores.</p>
+
+            <div class="valores">
+
+                <div class="valor">
+                    <label>Coeficiente b</label>
+                    <div id="valorB">0</div>
+                </div>
+
+                <div class="valor">
+                    <label>Coeficiente c</label>
+                    <div id="valorC">0</div>
+                </div>
+
+            </div>
+
+            <button id="btnGenerar">Generar / Cambiar valores</button>
+
+            <p id="funcion">f(x) = bx + c</p>
+
+        </section>
+
+        <section class="resultados">
+
+            <h2>Clasificación de la función</h2>
+
+            <div class="tarjeta lineal">
+                <h3>Función lineal</h3>
+                <p id="resultadoLineal">
+                    Aquí aparecerán las propiedades si c es igual a 0.
+                </p>
+
+                <ul id="listaLineal" hidden>
+                    <li>Es una línea recta continua.</li>
+                    <li>Pasa obligatoriamente por el origen (0, 0).</li>
+                    <li>Su pendiente depende del valor de b.</li>
+                    <li>Si b es positivo, la función es creciente.</li>
+                    <li>Si b es negativo, la función es decreciente.</li>
+                </ul>
+            </div>
+
+            <div class="tarjeta afin">
+                <h3>Función afín</h3>
+                <p id="resultadoAfin">
+                    Aquí aparecerán las propiedades si c es distinto de 0.
+                </p>
+
+                <ul id="listaAfin" hidden>
+                    <li>Es una línea recta continua.</li>
+                    <li>No pasa por el origen.</li>
+                    <li>Corta el eje Y en el punto (0, c).</li>
+                    <li>Su inclinación depende del valor de b.</li>
+                    <li>Representa un desplazamiento vertical de la función lineal.</li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section class="geogebra">
+
+            <h2>Link GeoGebra</h2>
+
+
+
+            <a href="https://www.geogebra.org/classic"
+            target="_blank">
+                Abrir GeoGebra Classic
+            </a>
+
+        </section>
+
+        <footer>
+            <p>Proyecto de funciones lineales y afines</p>
+            <p>¡Sigue practicando y probando diferentes valores!</p>
+        </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
